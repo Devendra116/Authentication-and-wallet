@@ -11,6 +11,12 @@ const AppBar = () => {
                         Home
                     </Link>
                 </div>
+                <div>
+                    <Link className=" transition-colors hover:text-blue-500" href={"/secret"}>
+                        Secret
+                    </Link>
+                </div>
+                 
             </div>
 
             <div>
