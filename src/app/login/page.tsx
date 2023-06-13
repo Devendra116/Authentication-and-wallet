@@ -13,7 +13,8 @@ const LoginPage = () => {
     setError('');
     if (email && password) {
       const result = await signIn("credentials", {
-        redirect: false,
+        redirect: true,
+        callbackUrl:"/",
         email,
         password,
       });
