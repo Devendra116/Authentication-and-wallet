@@ -5,7 +5,7 @@ import { useDisconnect } from 'wagmi'
 import { SendEtherTransaction } from "@/component/sendEther";
 
 const SurveyPage: React.FC = () => {
-    const [account, setAccount] = useState(() => localStorage.getItem('account') || '');
+    const [account, setAccount] = useState('');
     const { disconnect } = useDisconnect({
         onError(error) {
             console.log('Error', error)
@@ -32,8 +32,15 @@ const SurveyPage: React.FC = () => {
         }
     }, [isDisconnected]);
 
+    useEffect(() => {
+        // Perform localStorage action
+        if (typeof window !== 'undefined' && !account) {
+        const currentAccount = localStorage.getItem('account')
+        setAccount(currentAccount || '')}
+      }, [])
+
     return (
-        <>
+        <> 
             <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-white">
 
                     <div className="flex items-center  justify-center h-screen">
