@@ -18,7 +18,7 @@ const LoginPage = () => {
         email,
         password,
       });
-      console.log("result",result)
+    
       if (result?.error) {
         setError("Invalid Credentials !");
       }
