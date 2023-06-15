@@ -12,6 +12,7 @@ const AppBar = () => {
         <a href="/" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
         <a href="/secret" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Secret</a>
         <a href="/ethereum" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Send-Ethers</a>
+        <a href="/near" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Guest-Message</a>
         <SigninButton />
       </div>
       

@@ -9,24 +9,37 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@near-wallet-selector/core": "^8.1.4",
+    "@near-wallet-selector/modal-ui": "^8.1.4",
+    "@near-wallet-selector/my-near-wallet": "^8.1.4",
+    "@near-wallet-selector/near-wallet": "^8.1.4",
     "@types/node": "20.3.0",
     "@types/react": "18.2.11",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
     "bcrypt": "^5.1.0",
+    "big.js": "^6.2.1",
+    "bn.js": "^5.2.1",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.2.3",
+    "near-api-js": "^2.1.4",
     "next": "13.4.5",
     "next-auth": "^4.22.1",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-query": "^3.39.3",
+    "rxjs": "^7.8.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.3",
     "wagmi": "^1.2.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
-    "@types/jsonwebtoken": "^9.0.2"
+    "@types/big.js": "^6.1.6",
+    "@types/bn.js": "^5.1.1",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/react-query": "^1.2.9",
+    "encoding": "^0.1.13"
   }
 }
